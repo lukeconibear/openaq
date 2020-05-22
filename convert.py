@@ -13,7 +13,7 @@ args = parser.parse_args()
 year = args.year
 
 path = '~' # change to this where the data is
-files = glob.glob('openaq-fetches.s3.amazonaws.com/realtime-gzipped/' + year + '*/*')
+files = sorted(glob.glob('openaq-fetches.s3.amazonaws.com/realtime-gzipped/' + year + '*/*'))
 
 df_list = []
 for file in files:
