@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Convert the default format for OpenAQ data (.ndjson.gz) to Pandas DataFrame for a given year
+"""
+
 import glob
 import gzip
 import ndjson
