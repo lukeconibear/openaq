@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-# credit to https://github.com/barronh/scrapenaq
+"""
+Download script for all OpenAQ data
+Credit to https://github.com/barronh/scrapenaq
+Downloads all (.ndjson.gz) files between dates
+Example:
+    python download.py 2020-01-01 2020-12-31
+"""
+
 import pandas as pd
 import urllib.request
 import re
